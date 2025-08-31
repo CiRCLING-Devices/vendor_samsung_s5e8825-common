@@ -21,6 +21,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/init.sensorhub.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.sensorhub.rc \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/secaudiohalaidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/secaudiohalaidl.rc \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/teegris_v4.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris_v4.rc \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/vaultkeeper_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vaultkeeper_common.rc \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/vendor.samsung.hardware.gnss@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.gnss@2.1-service.rc \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/vendor.samsung.rilchip.slsi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rilchip.slsi.rc \
@@ -76,7 +77,9 @@ PRODUCT_PACKAGES += \
     libspatializerparamstorage \
     libspeakercalibration \
     libswcnr \
+    libteecl \
     libtinyalsa.s5e8825 \
+    libuuid_vendor \
     sensors.grip \
     sensors.inputvirtual \
     sensors.sensorhub \
@@ -128,7 +131,9 @@ PRODUCT_PACKAGES += \
     rild \
     secaudiohalaidl \
     vendor.samsung.hardware.gnss@2.1-service \
-    secril_config_svc
+    secril_config_svc \
+    tzdaemon \
+    tzts_daemon
 
 PRODUCT_PACKAGES += \
     vendor_lib_libOpenCL_so \

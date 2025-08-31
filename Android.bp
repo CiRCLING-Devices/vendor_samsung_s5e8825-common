@@ -1475,6 +1475,39 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libteecl",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libteecl.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libdl",
+                "libc",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libteecl.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libtinyalsa.s5e8825",
     stem: "libtinyalsa.s5e8825",
     owner: "samsung",
@@ -1502,6 +1535,40 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libuuid_vendor",
+    stem: "libuuid",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libuuid.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libdl",
+                "libc",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libuuid.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libdl",
+                "libc",
             ],
         },
     },
@@ -2992,6 +3059,56 @@ cc_prebuilt_binary {
                 "libc++",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "tzdaemon",
+    owner: "samsung",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/tzdaemon",
+            ],
+            shared_libs: [
+                "libteecl",
+                "libuuid",
+                "liblog",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "tzts_daemon",
+    owner: "samsung",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/tzts_daemon",
+            ],
+            shared_libs: [
+                "libteecl",
+                "libuuid",
+                "liblog",
+                "libdl",
+                "libc",
             ],
         },
     },
