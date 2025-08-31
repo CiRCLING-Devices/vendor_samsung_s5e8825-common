@@ -3,6 +3,13 @@
 //
 
 soong_namespace {
+    imports: [
+        "device/samsung/s5e8825-common",
+        "hardware/samsung",
+        "hardware/samsung_slsi-linaro/exynos",
+        "hardware/samsung_slsi-linaro/graphics",
+        "hardware/samsung_slsi-linaro/interfaces",
+    ],
 }
 
 cc_prebuilt_library_shared {
