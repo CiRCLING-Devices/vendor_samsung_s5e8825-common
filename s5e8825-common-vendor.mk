@@ -18,6 +18,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/init.baseband.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.baseband.rc \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/init.fingerprint.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fingerprint.rc \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/init.gps.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps.rc \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/init.sensorhub.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.sensorhub.rc \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/secaudiohalaidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/secaudiohalaidl.rc \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/vaultkeeper_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vaultkeeper_common.rc \
@@ -35,6 +36,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/plmn_delta_hktw.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_hktw.bin \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/plmn_se13_prebuilt.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_se13_prebuilt.bin \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/sec_audio_volume_curve.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sec_audio_volume_curve.xml \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/wifi/indoorchannel.info:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/indoorchannel.info \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/wifi/mx140.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140.bin \
@@ -75,6 +77,9 @@ PRODUCT_PACKAGES += \
     libspeakercalibration \
     libswcnr \
     libtinyalsa.s5e8825 \
+    sensors.grip \
+    sensors.inputvirtual \
+    sensors.sensorhub \
     vendor.samsung.hardware.bluetooth.audio-V1-ndk \
     libswdap \
     android.hardware.gnss@2.1-impl \
