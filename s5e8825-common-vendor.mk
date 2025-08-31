@@ -18,6 +18,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     audio.primary.s5e8825 \
     audio.sec_primary.default \
+    libSEF.quram \
     libSamsungPostProcessConvertor \
     lib_SamsungRec_07010 \
     lib_SoundAlive_SRC384_ver320 \
@@ -29,6 +30,8 @@ PRODUCT_PACKAGES += \
     libaudioproxy2 \
     libaudioroute.s5e8825 \
     libdatamod \
+    libexynoscamera_cnr_plugin \
+    libexynoscamera_plugin \
     liblastaboxmsg \
     libprofileparamstorage \
     librecordalive \
@@ -38,11 +41,18 @@ PRODUCT_PACKAGES += \
     libsehbluetooth_audio_session_aidl \
     libspatializerparamstorage \
     libspeakercalibration \
+    libswcnr \
     libtinyalsa.s5e8825 \
     vendor.samsung.hardware.bluetooth.audio-V1-ndk \
     libfloatingfeature \
     libswdap \
     libsecaudiohal_aidl \
+    libc++_shared \
+    libhwjsqz \
+    libsensorlistener \
+    libuniapi \
+    libuniplugin \
     vendor.samsung.hardware.audio-V1-ndk \
+    vendor.samsung.hardware.thermal@1.0 \
     secaudiohalaidl_manifest.xml \
     secaudiohalaidl
