@@ -2502,7 +2502,7 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libhidlmemory",
                 "liblog",
-                "libprotobuf-cpp-lite-3.9.1",
+                "libprotobuf-cpp-full-3.9.1",
                 "libutils",
                 "libc++",
                 "libc",
