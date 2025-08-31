@@ -8,10 +8,20 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/SoundBoosterParam.txt:$(TARGET_COPY_OUT_VENDOR)/etc/SoundBoosterParam.txt \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/cass.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cass.rc \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/init.baseband.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.baseband.rc \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/secaudiohalaidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/secaudiohalaidl.rc \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/vendor.samsung.rilchip.slsi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rilchip.slsi.rc \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/vendor.samsung.rild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rild.rc \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/mtu-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtu-conf.xml \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/plmn_delta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta.bin \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/plmn_delta_chn.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_chn.bin \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/plmn_delta_hktw.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_hktw.bin \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/plmn_se13_prebuilt.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_se13_prebuilt.bin \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/sec_audio_volume_curve.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sec_audio_volume_curve.xml \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
 
@@ -33,27 +43,48 @@ PRODUCT_PACKAGES += \
     libdatamod \
     libexynoscamera_cnr_plugin \
     libexynoscamera_plugin \
+    libfloatingfeature \
     liblastaboxmsg \
     libprofileparamstorage \
     librecordalive \
     libsecaudiocoreutils \
     libsecaudioinfo \
     libsecaudiolevel \
+    libsecril-client \
     libsehbluetooth_audio_session_aidl \
+    libsemnativecarrierfeature \
     libspatializerparamstorage \
     libspeakercalibration \
     libswcnr \
     libtinyalsa.s5e8825 \
     vendor.samsung.hardware.bluetooth.audio-V1-ndk \
-    libfloatingfeature \
     libswdap \
     libsecaudiohal_aidl \
+    libVendorSemDataProps \
+    libVendorSemTelephonyProps \
     libc++_shared \
+    libengmode_client \
     libhwjsqz \
+    libril_sem \
+    libsec-ril \
     libsensorlistener \
     libuniapi \
     libuniplugin \
+    libvkmanager_vendor \
     vendor.samsung.hardware.audio-V1-ndk \
+    vendor.samsung.hardware.radio-V1-ndk \
+    vendor.samsung.hardware.radio.bridge-V1-ndk \
+    vendor.samsung.hardware.radio.channel-V1-ndk \
+    vendor.samsung.hardware.radio.channel@2.0 \
+    vendor.samsung.hardware.radio.data-V1-ndk \
+    vendor.samsung.hardware.radio.messaging-V1-ndk \
+    vendor.samsung.hardware.radio.sim-V1-ndk \
     vendor.samsung.hardware.thermal@1.0 \
     secaudiohalaidl_manifest.xml \
-    secaudiohalaidl
+    vendor.samsung.hardware.radio.exclude.slsi.xml \
+    vendor.samsung.hardware.radio_manifest_2_33.xml \
+    vendor.samsung.hardware.sehradio_manifest_2_33.xml \
+    cass \
+    rild \
+    secaudiohalaidl \
+    secril_config_svc
