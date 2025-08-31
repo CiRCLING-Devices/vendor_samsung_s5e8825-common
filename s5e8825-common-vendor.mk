@@ -39,9 +39,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/wifi/mx140_t.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140_t.bin
 
 PRODUCT_PACKAGES += \
+    libGLES_mali \
     audio.primary.s5e8825 \
     audio.sec_primary.default \
     gatekeeper.s5e8825 \
+    vulkan.mali \
     libSEF.quram \
     libSamsungPostProcessConvertor \
     lib_SamsungRec_07010 \
@@ -117,3 +119,11 @@ PRODUCT_PACKAGES += \
     secaudiohalaidl \
     vendor.samsung.hardware.gnss@2.1-service \
     secril_config_svc
+
+PRODUCT_PACKAGES += \
+    vendor_lib_libOpenCL_so \
+    vendor_lib_libOpenCL_so_1 \
+    vendor_lib_libOpenCL_so_1_1 \
+    vendor_lib64_libOpenCL_so \
+    vendor_lib64_libOpenCL_so_1 \
+    vendor_lib64_libOpenCL_so_1_1

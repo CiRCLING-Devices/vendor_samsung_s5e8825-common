@@ -6,6 +6,64 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+    name: "libGLES_mali",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/egl/libGLES_mali.so",
+            ],
+            shared_libs: [
+                "libnativewindow",
+                "libutils",
+                "libgralloctypes",
+                "liblog",
+                "libion_exynos",
+                "libbase",
+                "libz",
+                "libcutils",
+                "android.hardware.graphics.mapper@4.0",
+                "libhidlbase",
+                "libhardware",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/egl/libGLES_mali.so",
+            ],
+            shared_libs: [
+                "libnativewindow",
+                "libutils",
+                "libgralloctypes",
+                "liblog",
+                "libion_exynos",
+                "libbase",
+                "libz",
+                "libcutils",
+                "android.hardware.graphics.mapper@4.0",
+                "libhidlbase",
+                "libhardware",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    relative_install_path: "egl",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "audio.primary.s5e8825",
     owner: "samsung",
     strip: {
@@ -142,6 +200,44 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libteecl",
                 "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vulkan.mali",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/vulkan.mali.so",
+            ],
+            shared_libs: [
+                "libGLES_mali",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/vulkan.mali.so",
+            ],
+            shared_libs: [
+                "libGLES_mali",
                 "libc++",
                 "libc",
                 "libm",
@@ -2662,4 +2758,46 @@ cc_prebuilt_binary {
     },
     prefer: true,
     soc_specific: true,
+}
+
+install_symlink {
+    name: "vendor_lib_libOpenCL_so",
+    soc_specific: true,
+    installed_location: "lib/libOpenCL.so",
+    symlink_target: "/vendor/lib/egl/libGLES_mali.so",
+}
+
+install_symlink {
+    name: "vendor_lib_libOpenCL_so_1",
+    soc_specific: true,
+    installed_location: "lib/libOpenCL.so.1",
+    symlink_target: "/vendor/lib/egl/libGLES_mali.so",
+}
+
+install_symlink {
+    name: "vendor_lib_libOpenCL_so_1_1",
+    soc_specific: true,
+    installed_location: "lib/libOpenCL.so.1.1",
+    symlink_target: "/vendor/lib/egl/libGLES_mali.so",
+}
+
+install_symlink {
+    name: "vendor_lib64_libOpenCL_so",
+    soc_specific: true,
+    installed_location: "lib64/libOpenCL.so",
+    symlink_target: "/vendor/lib64/egl/libGLES_mali.so",
+}
+
+install_symlink {
+    name: "vendor_lib64_libOpenCL_so_1",
+    soc_specific: true,
+    installed_location: "lib64/libOpenCL.so.1",
+    symlink_target: "/vendor/lib64/egl/libGLES_mali.so",
+}
+
+install_symlink {
+    name: "vendor_lib64_libOpenCL_so_1_1",
+    soc_specific: true,
+    installed_location: "lib64/libOpenCL.so.1.1",
+    symlink_target: "/vendor/lib64/egl/libGLES_mali.so",
 }
