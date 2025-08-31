@@ -71,6 +71,7 @@ PRODUCT_PACKAGES += \
     libsecaudiocoreutils \
     libsecaudioinfo \
     libsecaudiolevel \
+    libsecnativefeature \
     libsecril-client \
     libsehbluetooth_audio_session_aidl \
     libsemnativecarrierfeature \
