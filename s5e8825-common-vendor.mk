@@ -18,6 +18,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     audio.primary.s5e8825 \
     audio.sec_primary.default \
+    gatekeeper.s5e8825 \
     libSEF.quram \
     libSamsungPostProcessConvertor \
     lib_SamsungRec_07010 \
