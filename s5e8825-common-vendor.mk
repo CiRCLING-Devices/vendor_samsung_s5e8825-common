@@ -11,6 +11,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/SoundBoosterParam.txt:$(TARGET_COPY_OUT_VENDOR)/etc/SoundBoosterParam.txt \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/btcon.json:$(TARGET_COPY_OUT_VENDOR)/etc/btcon.json \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/ems.json:$(TARGET_COPY_OUT_VENDOR)/etc/ems.json \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/ems_parameter.json:$(TARGET_COPY_OUT_VENDOR)/etc/ems_parameter.json \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/epic.json:$(TARGET_COPY_OUT_VENDOR)/etc/epic.json \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/gnss/ca.pem:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/ca.pem \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/gnss/gps.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.cfg \
@@ -99,8 +101,11 @@ PRODUCT_PACKAGES += \
     libc++_shared \
     libcrypto-tm \
     libegis_fp_normal_sensor_test \
+    libems_service \
     libengmode_client \
+    libexynos_migov \
     libgf_in_system_lib \
+    libgmc \
     libhwjsqz \
     libqfp_sensortest \
     libril_sem \
@@ -131,6 +136,7 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.radio_manifest_2_33.xml \
     vendor.samsung.hardware.sehradio_manifest_2_33.xml \
     cass \
+    epic \
     android.hardware.drm@1.4-service.widevine \
     gps \
     gpsd \
