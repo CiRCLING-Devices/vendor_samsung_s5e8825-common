@@ -45,7 +45,19 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/wifi/indoorchannel.info:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/indoorchannel.info \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/wifi/mx140.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140.bin \
-    vendor/samsung/s5e8825-common/proprietary/vendor/etc/wifi/mx140_t.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140_t.bin
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/wifi/mx140_t.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140_t.bin \
+    vendor/samsung/s5e8825-common/proprietary/vendor/firmware/APBiBF_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APBiBF_AUDIO_SLSI.bin \
+    vendor/samsung/s5e8825-common/proprietary/vendor/firmware/APSV_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APSV_AUDIO_SLSI.bin \
+    vendor/samsung/s5e8825-common/proprietary/vendor/firmware/OD_V2.1.6_01_26_QVGA.nnc:$(TARGET_COPY_OUT_VENDOR)/firmware/OD_V2.1.6_01_26_QVGA.nnc \
+    vendor/samsung/s5e8825-common/proprietary/vendor/firmware/OD_V2.3.7_02_05_VGA.nnc:$(TARGET_COPY_OUT_VENDOR)/firmware/OD_V2.3.7_02_05_VGA.nnc \
+    vendor/samsung/s5e8825-common/proprietary/vendor/firmware/avsyncmix.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/avsyncmix.bin \
+    vendor/samsung/s5e8825-common/proprietary/vendor/firmware/bidirmic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/bidirmic.bin \
+    vendor/samsung/s5e8825-common/proprietary/vendor/firmware/dax_param.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dax_param.bin \
+    vendor/samsung/s5e8825-common/proprietary/vendor/firmware/default_configuration.flm.cfg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/default_configuration.flm.cfg.bin \
+    vendor/samsung/s5e8825-common/proprietary/vendor/firmware/dolby.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dolby.bin \
+    vendor/samsung/s5e8825-common/proprietary/vendor/firmware/listenbackeffect.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/listenbackeffect.bin \
+    vendor/samsung/s5e8825-common/proprietary/vendor/firmware/secure_configuration.flm.cfg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/secure_configuration.flm.cfg.bin \
+    vendor/samsung/s5e8825-common/proprietary/vendor/firmware/volumemonitor.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/volumemonitor.bin
 
 PRODUCT_PACKAGES += \
     libGLES_mali \
