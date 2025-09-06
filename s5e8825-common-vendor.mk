@@ -61,12 +61,17 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libGLES_mali \
+    android.hardware.gnss@2.1-impl \
     audio.primary.s5e8825 \
     audio.sec_primary.default \
     gatekeeper.s5e8825 \
+    libsecaudiohal_aidl \
+    vendor.samsung.hardware.gnss@2.1-impl \
     vulkan.mali \
     libSEF.quram \
     libSamsungPostProcessConvertor \
+    libVendorSemDataProps \
+    libVendorSemTelephonyProps \
     lib_SamsungRec_07010 \
     lib_SoundAlive_SRC384_ver320 \
     lib_soundaliveresampler \
@@ -76,14 +81,26 @@ PRODUCT_PACKAGES += \
     libaudioparamupdate \
     libaudioproxy2 \
     libaudioroute.s5e8825 \
+    libc++_shared \
+    libcrypto-tm \
     libdatamod \
+    libegis_fp_normal_sensor_test \
+    libems_service \
+    libengmode_client \
     libepic_helper \
+    libexynos_migov \
     libexynoscamera_cnr_plugin \
     libexynoscamera_plugin \
     libfloatingfeature \
+    libgf_in_system_lib \
+    libgmc \
+    libhwjsqz \
     liblastaboxmsg \
     libprofileparamstorage \
+    libqfp_sensortest \
     librecordalive \
+    libril_sem \
+    libsec-ril \
     libsecaudiocoreutils \
     libsecaudioinfo \
     libsecaudiolevel \
@@ -91,43 +108,26 @@ PRODUCT_PACKAGES += \
     libsecril-client \
     libsehbluetooth_audio_session_aidl \
     libsemnativecarrierfeature \
+    libsensorlistener \
     libspatializerparamstorage \
     libspeakercalibration \
+    libssl-tm \
     libswcnr \
+    libsynaFpSensorTestNwd \
     libteecl \
     libtinyalsa.s5e8825 \
-    libuuid_vendor \
-    sensors.grip \
-    sensors.inputvirtual \
-    sensors.sensorhub \
-    vendor.samsung.hardware.bluetooth.audio-V1-ndk \
-    libswdap \
-    android.hardware.gnss@2.1-impl \
-    libsecaudiohal_aidl \
-    vendor.samsung.hardware.gnss@2.1-impl \
-    libVendorSemDataProps \
-    libVendorSemTelephonyProps \
-    libc++_shared \
-    libcrypto-tm \
-    libegis_fp_normal_sensor_test \
-    libems_service \
-    libengmode_client \
-    libexynos_migov \
-    libgf_in_system_lib \
-    libgmc \
-    libhwjsqz \
-    libqfp_sensortest \
-    libril_sem \
-    libsec-ril \
-    libsensorlistener \
-    libssl-tm \
-    libsynaFpSensorTestNwd \
     libuniapi \
     libuniplugin \
+    libuuid_vendor \
     libvkmanager_vendor \
     libwrappergps \
     libwvhidl \
+    sensors.grip \
+    sensors.inputvirtual \
+    sensors.sensorhub \
+    libswdap \
     vendor.samsung.hardware.audio-V1-ndk \
+    vendor.samsung.hardware.bluetooth.audio-V1-ndk \
     vendor.samsung.hardware.gnss@2.0 \
     vendor.samsung.hardware.gnss@2.1 \
     vendor.samsung.hardware.keymint-V1-ndk_platform \
@@ -158,9 +158,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.security.proca@2.0-service
 
 PRODUCT_PACKAGES += \
-    vendor_lib_libOpenCL_so \
-    vendor_lib_libOpenCL_so_1 \
-    vendor_lib_libOpenCL_so_1_1 \
     vendor_lib64_libOpenCL_so \
     vendor_lib64_libOpenCL_so_1 \
     vendor_lib64_libOpenCL_so_1_1
