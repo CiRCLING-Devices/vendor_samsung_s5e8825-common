@@ -151,7 +151,6 @@ PRODUCT_PACKAGES += \
     rild \
     secaudiohalaidl \
     vendor.samsung.hardware.gnss@2.1-service \
-    secril_config_svc \
     tzdaemon \
     tzts_daemon \
     vaultkeeperd \
