@@ -139,13 +139,11 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.radio.data-V1-ndk \
     vendor.samsung.hardware.radio.messaging-V1-ndk \
     vendor.samsung.hardware.radio.sim-V1-ndk \
-    vendor.samsung.hardware.security.vaultkeeper-V1-ndk_platform \
     vendor.samsung.hardware.thermal@1.0 \
     manifest_android.hardware.drm-service.widevine.xml \
     secaudiohalaidl_manifest.xml \
     vendor.samsung.hardware.radio.exclude.slsi.xml \
     vendor.samsung.hardware.radio_manifest_2_33.xml \
-    vendor.samsung.hardware.security.vaultkeeper-manifest.xml \
     vendor.samsung.hardware.sehradio_manifest_2_33.xml \
     cass \
     epic \
@@ -159,8 +157,7 @@ PRODUCT_PACKAGES += \
     tzdaemon \
     tzts_daemon \
     vaultkeeperd \
-    vendor.samsung.hardware.security.proca@2.0-service \
-    vendor.samsung.hardware.security.vaultkeeper-service
+    vendor.samsung.hardware.security.proca@2.0-service
 
 PRODUCT_PACKAGES += \
     vendor_lib64_libOpenCL_so \
