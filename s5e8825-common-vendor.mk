@@ -15,7 +15,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/epic.json:$(TARGET_COPY_OUT_VENDOR)/etc/epic.json \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/gnss/ca.pem:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/ca.pem \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/gnss/gps.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.cfg \
-    vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/android.hardware.security.keymint-service.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.samsung.rc \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/cass.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cass.rc \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/init.gps.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps.rc \
@@ -120,7 +120,7 @@ PRODUCT_PACKAGES += \
     libuuid_vendor \
     libvkmanager_vendor \
     libwrappergps \
-    libwvhidl \
+    libwvaidl \
     sensors.grip \
     sensors.inputvirtual \
     sensors.sensorhub \
@@ -138,14 +138,14 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.radio.messaging-V1-ndk \
     vendor.samsung.hardware.radio.sim-V1-ndk \
     vendor.samsung.hardware.thermal@1.0 \
-    manifest_android.hardware.drm@1.4-service.widevine.xml \
+    manifest_android.hardware.drm-service.widevine.xml \
     secaudiohalaidl_manifest.xml \
     vendor.samsung.hardware.radio.exclude.slsi.xml \
     vendor.samsung.hardware.radio_manifest_2_33.xml \
     vendor.samsung.hardware.sehradio_manifest_2_33.xml \
     cass \
     epic \
-    android.hardware.drm@1.4-service.widevine \
+    android.hardware.drm-service.widevine \
     gps \
     gpsd \
     rild \
