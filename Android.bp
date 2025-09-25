@@ -1515,6 +1515,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libstork_shared",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libstork_shared.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libswcnr",
     owner: "samsung",
     strip: {
@@ -1703,6 +1728,34 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libcutils",
                 "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvkservice",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libvkservice.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libstork_shared",
+                "libteecl",
                 "libc++",
                 "libc",
                 "libm",
@@ -2235,6 +2288,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.samsung.hardware.security.vaultkeeper-V1-ndk_platform",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.samsung.hardware.security.vaultkeeper-V1-ndk_platform.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.samsung.hardware.thermal@1.0",
     owner: "samsung",
     strip: {
@@ -2295,6 +2373,15 @@ prebuilt_etc_xml {
     name: "vendor.samsung.hardware.radio_manifest_2_33.xml",
     owner: "samsung",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.radio_manifest_2_33.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.samsung.hardware.security.vaultkeeper-manifest.xml",
+    owner: "samsung",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.security.vaultkeeper-manifest.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -2613,6 +2700,34 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+    name: "vaultkeeperd",
+    owner: "samsung",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/vaultkeeperd",
+            ],
+            shared_libs: [
+                "libdsms_vendor",
+                "libvkservice",
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "vendor.samsung.hardware.security.proca@2.0-service",
     owner: "samsung",
     target: {
@@ -2624,6 +2739,40 @@ cc_prebuilt_binary {
                 "libteecl",
                 "liblog",
                 "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.samsung.hardware.security.vaultkeeper-service",
+    owner: "samsung",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/vendor.samsung.hardware.security.vaultkeeper-service",
+            ],
+            shared_libs: [
+                "vendor.samsung.hardware.security.vaultkeeper-V1-ndk_platform",
+                "libbinder_ndk",
+                "liblog",
+                "libbase",
+                "libutils",
+                "libcutils",
+                "libhardware",
+                "libhidlbase",
+                "libbinder",
+                "libvkmanager_vendor",
                 "libc++",
                 "libc",
                 "libm",

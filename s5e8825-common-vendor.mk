@@ -111,6 +111,7 @@ PRODUCT_PACKAGES += \
     libspatializerparamstorage \
     libspeakercalibration \
     libssl-tm \
+    libstork_shared \
     libswcnr \
     libsynaFpSensorTestNwd \
     libteecl \
@@ -119,6 +120,7 @@ PRODUCT_PACKAGES += \
     libuniplugin \
     libuuid_vendor \
     libvkmanager_vendor \
+    libvkservice \
     libwrappergps \
     libwvaidl \
     sensors.grip \
@@ -137,11 +139,13 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.radio.data-V1-ndk \
     vendor.samsung.hardware.radio.messaging-V1-ndk \
     vendor.samsung.hardware.radio.sim-V1-ndk \
+    vendor.samsung.hardware.security.vaultkeeper-V1-ndk_platform \
     vendor.samsung.hardware.thermal@1.0 \
     manifest_android.hardware.drm-service.widevine.xml \
     secaudiohalaidl_manifest.xml \
     vendor.samsung.hardware.radio.exclude.slsi.xml \
     vendor.samsung.hardware.radio_manifest_2_33.xml \
+    vendor.samsung.hardware.security.vaultkeeper-manifest.xml \
     vendor.samsung.hardware.sehradio_manifest_2_33.xml \
     cass \
     epic \
@@ -154,7 +158,9 @@ PRODUCT_PACKAGES += \
     secril_config_svc \
     tzdaemon \
     tzts_daemon \
-    vendor.samsung.hardware.security.proca@2.0-service
+    vaultkeeperd \
+    vendor.samsung.hardware.security.proca@2.0-service \
+    vendor.samsung.hardware.security.vaultkeeper-service
 
 PRODUCT_PACKAGES += \
     vendor_lib64_libOpenCL_so \
