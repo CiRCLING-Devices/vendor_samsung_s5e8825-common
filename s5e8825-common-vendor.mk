@@ -95,6 +95,7 @@ PRODUCT_PACKAGES += \
     libgmc \
     libhwjsqz \
     liblastaboxmsg \
+    liboemcrypto \
     libprofileparamstorage \
     libqfp_sensortest \
     librecordalive \
