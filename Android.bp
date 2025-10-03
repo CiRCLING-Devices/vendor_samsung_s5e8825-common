@@ -1842,7 +1842,7 @@ cc_prebuilt_library_shared {
                 "libcrypto",
                 "libcutils",
                 "liblog",
-                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "libutils",
                 "libc++",
                 "libc",
