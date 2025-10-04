@@ -110,7 +110,6 @@ PRODUCT_PACKAGES += \
     libsensorlistener \
     libspatializerparamstorage \
     libspeakercalibration \
-    libssl-tm \
     libstork_shared \
     libswcnr \
     libsynaFpSensorTestNwd \
