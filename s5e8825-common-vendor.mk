@@ -24,7 +24,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/teegris_v4.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris_v4.rc \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/vaultkeeper_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vaultkeeper_common.rc \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/vendor.samsung.hardware.gnss@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.gnss@2.1-service.rc \
-    vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/vendor.samsung.rilchip.slsi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rilchip.slsi.rc \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/vendor.samsung.rild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rild.rc \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/wifi_slsi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi_slsi.rc \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
