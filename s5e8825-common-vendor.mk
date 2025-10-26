@@ -106,6 +106,8 @@ PRODUCT_PACKAGES += \
     libsehbluetooth_audio_session_aidl \
     libsemnativecarrierfeature \
     libsensorlistener \
+    libskeymint10device \
+    libskeymint_cli \
     libspatializerparamstorage \
     libspeakercalibration \
     libstork_shared \
@@ -144,6 +146,7 @@ PRODUCT_PACKAGES += \
     cass \
     epic \
     android.hardware.drm-service.widevine \
+    android.hardware.security.keymint-service.samsung \
     gps \
     gpsd \
     rild \
