@@ -8,18 +8,15 @@
         <transport>hwbinder</transport>
     </hal>
     <hal override="true" format="hidl">
-        <name>android.hardware.radio</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.2::ISap/slot1</fqname>
-        <fqname>@1.2::ISap/slot2</fqname>
-    </hal>
-    <hal override="true" format="hidl">
         <name>android.hardware.radio.config</name>
         <transport>hwbinder</transport>
     </hal>
     <hal override="true" format="aidl">
+        <name>android.hardware.radio.ims</name>
+    </hal>
+    <hal override="true" format="aidl">
         <name>android.hardware.radio.modem</name>
-        <version>1</version>
+        <version>2</version>
         <interface>
             <name>IRadioModem</name>
             <instance>slot1</instance>
@@ -28,7 +25,7 @@
     </hal>
     <hal override="true" format="aidl">
         <name>android.hardware.radio.network</name>
-        <version>1</version>
+        <version>2</version>
         <interface>
             <name>IRadioNetwork</name>
             <instance>slot1</instance>
@@ -37,7 +34,7 @@
     </hal>
     <hal override="true" format="aidl">
         <name>android.hardware.radio.voice</name>
-        <version>1</version>
+        <version>2</version>
         <interface>
             <name>IRadioVoice</name>
             <instance>slot1</instance>
@@ -46,7 +43,7 @@
     </hal>
     <hal override="true" format="aidl">
         <name>android.hardware.radio.config</name>
-        <version>1</version>
+        <version>2</version>
         <interface>
             <name>IRadioConfig</name>
             <instance>default</instance>
@@ -54,7 +51,7 @@
     </hal>
     <hal override="true" format="aidl">
         <name>android.hardware.radio.sim</name>
-        <version>1</version>
+        <version>2</version>
         <interface>
             <name>IRadioSim</name>
             <instance>slot1</instance>
@@ -63,7 +60,7 @@
     </hal>
     <hal override="true" format="aidl">
         <name>android.hardware.radio.data</name>
-        <version>1</version>
+        <version>2</version>
         <interface>
             <name>IRadioData</name>
             <instance>slot1</instance>
@@ -72,9 +69,18 @@
     </hal>
     <hal override="true" format="aidl">
         <name>android.hardware.radio.messaging</name>
-        <version>1</version>
+        <version>2</version>
         <interface>
             <name>IRadioMessaging</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal override="true" format="aidl">
+        <name>android.hardware.radio.sap</name>
+        <version>1</version>
+        <interface>
+            <name>ISap</name>
             <instance>slot1</instance>
             <instance>slot2</instance>
         </interface>

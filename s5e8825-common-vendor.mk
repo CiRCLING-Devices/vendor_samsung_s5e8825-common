@@ -94,6 +94,7 @@ PRODUCT_PACKAGES += \
     liblastaboxmsg \
     liboemcrypto \
     libprofileparamstorage \
+    libprotobuf-cpp-full-21.7 \
     libqfp_sensortest \
     librecordalive \
     libril_sem \
@@ -118,6 +119,7 @@ PRODUCT_PACKAGES += \
     libuniapi \
     libuniplugin \
     libuuid_vendor \
+    libvk_cass_interface \
     libvkmanager_vendor \
     libvkservice \
     libwrappergps \
@@ -141,8 +143,8 @@ PRODUCT_PACKAGES += \
     manifest_android.hardware.drm-service.widevine.xml \
     secaudiohalaidl_manifest.xml \
     vendor.samsung.hardware.radio.exclude.slsi.xml \
-    vendor.samsung.hardware.radio_manifest_2_33.xml \
-    vendor.samsung.hardware.sehradio_manifest_2_33.xml \
+    vendor.samsung.hardware.radio_manifest_2_34.xml \
+    vendor.samsung.hardware.sehradio_manifest_2_34.xml \
     cass \
     epic \
     android.hardware.drm-service.widevine \
