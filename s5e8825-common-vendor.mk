@@ -35,9 +35,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/sec_audio_volume_curve.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sec_audio_volume_curve.xml \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
-    vendor/samsung/s5e8825-common/proprietary/vendor/etc/wifi/mx140.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140.bin \
-    vendor/samsung/s5e8825-common/proprietary/vendor/etc/wifi/mx140_t.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140_t.bin \
-    vendor/samsung/s5e8825-common/proprietary/vendor/etc/wifi/mx140_t_common.hcf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140_t_common.hcf \
     vendor/samsung/s5e8825-common/proprietary/vendor/firmware/APSV_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APSV_AUDIO_SLSI.bin \
     vendor/samsung/s5e8825-common/proprietary/vendor/firmware/OD_V2.1.6_01_26_QVGA.nnc:$(TARGET_COPY_OUT_VENDOR)/firmware/OD_V2.1.6_01_26_QVGA.nnc \
     vendor/samsung/s5e8825-common/proprietary/vendor/firmware/OD_V2.3.7_02_05_VGA.nnc:$(TARGET_COPY_OUT_VENDOR)/firmware/OD_V2.3.7_02_05_VGA.nnc \
@@ -48,7 +45,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s5e8825-common/proprietary/vendor/firmware/dolby.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dolby.bin \
     vendor/samsung/s5e8825-common/proprietary/vendor/firmware/listenbackeffect.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/listenbackeffect.bin \
     vendor/samsung/s5e8825-common/proprietary/vendor/firmware/secure_configuration.flm.cfg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/secure_configuration.flm.cfg.bin \
-    vendor/samsung/s5e8825-common/proprietary/vendor/firmware/volumemonitor.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/volumemonitor.bin
+    vendor/samsung/s5e8825-common/proprietary/vendor/firmware/volumemonitor.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/volumemonitor.bin \
+    vendor/samsung/s5e8825-common/proprietary/vendor/firmware/wifi/mx140.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140.bin \
+    vendor/samsung/s5e8825-common/proprietary/vendor/firmware/wifi/mx140_t.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140_t.bin \
+    vendor/samsung/s5e8825-common/proprietary/vendor/firmware/wifi/mx140_t_common.hcf:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140_t_common.hcf
 
 PRODUCT_PACKAGES += \
     libGLES_mali \

@@ -1495,6 +1495,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libshim_crypto",
+                "libbase_shim",
                 "android.hardware.security.rkp-V3-ndk",
                 "libcrypto-tm",
                 "liblog",
@@ -1534,6 +1535,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libshim_crypto",
+                "libbase_shim",
                 "android.hardware.security.rkp-V3-ndk",
                 "liblog",
                 "libbase",
@@ -2141,6 +2143,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libshim_crypto",
+                "libbase_shim",
                 "android.hardware.security.rkp-V3-ndk",
                 "libbinder_ndk",
                 "android.hardware.security.keymint-V4-ndk",
