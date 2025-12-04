@@ -8,9 +8,6 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/SoundBoosterParam.txt:$(TARGET_COPY_OUT_VENDOR)/etc/SoundBoosterParam.txt \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
-    vendor/samsung/s5e8825-common/proprietary/vendor/etc/ems.json:$(TARGET_COPY_OUT_VENDOR)/etc/ems.json \
-    vendor/samsung/s5e8825-common/proprietary/vendor/etc/ems_parameter.json:$(TARGET_COPY_OUT_VENDOR)/etc/ems_parameter.json \
-    vendor/samsung/s5e8825-common/proprietary/vendor/etc/epic.json:$(TARGET_COPY_OUT_VENDOR)/etc/epic.json \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/gnss/ca.pem:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/ca.pem \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/gnss/gps.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.cfg \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
@@ -76,15 +73,11 @@ PRODUCT_PACKAGES += \
     libcrypto-tm \
     libdatamod \
     libegis_fp_normal_sensor_test \
-    libems_service \
     libengmode_client \
-    libepic_helper \
-    libexynos_migov \
     libexynoscamera_cnr_plugin \
     libexynoscamera_plugin \
     libfloatingfeature \
     libgf_in_system_lib \
-    libgmc \
     libhwjsqz \
     liblastaboxmsg \
     liboemcrypto \
@@ -137,7 +130,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.radio.exclude.slsi.xml \
     vendor.samsung.hardware.radio_manifest_2_34.xml \
     vendor.samsung.hardware.sehradio_manifest_2_34.xml \
-    epic \
     android.hardware.drm-service.widevine \
     android.hardware.security.keymint-service.samsung \
     gps \
