@@ -8,6 +8,7 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/SoundBoosterParam.txt:$(TARGET_COPY_OUT_VENDOR)/etc/SoundBoosterParam.txt \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/eden/gpu/eden_kernel_64.bin:$(TARGET_COPY_OUT_VENDOR)/etc/eden/gpu/eden_kernel_64.bin \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/gnss/ca.pem:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/ca.pem \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/gnss/gps.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.cfg \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
@@ -70,21 +71,58 @@ PRODUCT_PACKAGES += \
     libaudioproxy2 \
     libaudioroute.s5e8825 \
     libc++_shared \
+    libcommon \
+    libcommon_graphgen_export \
+    libcrane_compiler \
     libcrypto-tm \
     libdatamod \
+    libdove_compiler \
+    libeden_model \
+    libeden_nn \
+    libeden_osal \
+    libeden_profiler \
+    libeden_rt \
+    libeden_ud_cpu \
+    libeden_ud_dsp \
+    libeden_ud_gpu \
+    libeden_ud_npu \
+    libeden_xtool \
     libegis_fp_normal_sensor_test \
     libengmode_client \
+    libenn_dsp_dal \
+    libenn_dsp_fw_graph_parser \
+    libenn_dsp_kernels_cpu \
     libexynoscamera_cnr_plugin \
     libexynoscamera_plugin \
     libfloatingfeature \
     libgf_in_system_lib \
+    libgraphgen_ann_import \
+    libgraphgen_ann_import_s \
+    libgraphgen_ann_nnc \
+    libgraphgen_api \
+    libgraphgen_export \
+    libgraphgen_import \
+    libgraphgen_intermediate_process \
+    libgraphgen_misc \
+    libgraphgen_network \
     libhwjsqz \
+    libir \
     liblastaboxmsg \
+    libnpu_compiler \
+    libnpuc_api \
+    libnpuc_backend \
+    libnpuc_cmdq \
+    libnpuc_common \
+    libnpuc_controller \
+    libnpuc_frontend \
+    libnpuc_graph \
+    libnpuc_template \
     liboemcrypto \
     libprofileparamstorage \
     libqfp_sensortest \
     librecordalive \
     libril_sem \
+    libsait_npu_compiler \
     libsec-ril \
     libsecaudiocoreutils \
     libsecaudioinfo \
@@ -102,10 +140,12 @@ PRODUCT_PACKAGES += \
     libsynaFpSensorTestNwd \
     libteecl \
     libtinyalsa.s5e8825 \
+    libtoco_graphgen_export \
     libuniapi \
     libuniplugin \
     libuuid_vendor \
     libvkmanager_vendor \
+    libvpl \
     libwrappergps \
     libwvaidl \
     sensors.grip \
