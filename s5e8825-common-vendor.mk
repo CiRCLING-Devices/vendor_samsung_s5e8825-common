@@ -82,7 +82,6 @@ PRODUCT_PACKAGES += \
     liblastaboxmsg \
     liboemcrypto \
     libprofileparamstorage \
-    libprotobuf-cpp-full-21.7 \
     libqfp_sensortest \
     librecordalive \
     libril_sem \

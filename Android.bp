@@ -990,32 +990,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libprotobuf-cpp-full-21.7",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libprotobuf-cpp-full-21.7.so",
-            ],
-            shared_libs: [
-                "libz",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libqfp_sensortest",
     owner: "samsung",
     strip: {
@@ -1142,7 +1116,7 @@ cc_prebuilt_library_shared {
                 "libjsoncpp",
                 "libVendorSemTelephonyProps",
                 "libVendorSemDataProps",
-                "libprotobuf-cpp-full",
+                "libprotobuf-cpp-full-21.7",
                 "libvkmanager_vendor",
                 "libengmode_client",
                 "libbase",
