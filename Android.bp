@@ -2527,3 +2527,9 @@ install_symlink {
     installed_location: "lib64/libOpenCL.so.1.1",
     symlink_target: "/vendor/lib64/egl/libGLES_mali.so",
 }
+
+cc_library_shared {
+    name: "libexynoscamera3",
+    compile_multilib: "64",
+    soc_specific: true,
+}
