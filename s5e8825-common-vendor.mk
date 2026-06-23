@@ -8,6 +8,16 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/SoundBoosterParam.txt:$(TARGET_COPY_OUT_VENDOR)/etc/SoundBoosterParam.txt \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/dqe/DQE_coef_data.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/DQE_coef_data.xml \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/dqe/calib_data_atc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/calib_data_atc.xml \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/dqe/calib_data_bypass.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/calib_data_bypass.xml \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/dqe/calib_data_colormode0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/calib_data_colormode0.xml \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/dqe/calib_data_colormode0_hx83102e_gta4xls.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/calib_data_colormode0_hx83102e_gta4xls.xml \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/dqe/calib_data_colortemp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/calib_data_colortemp.xml \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/dqe/calib_data_eyetemp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/calib_data_eyetemp.xml \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/dqe/calib_data_rgbgain.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/calib_data_rgbgain.xml \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/dqe/calib_data_skincolor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/calib_data_skincolor.xml \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/dqe/calib_data_whitepoint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/calib_data_whitepoint.xml \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/eden/gpu/eden_kernel_64.bin:$(TARGET_COPY_OUT_VENDOR)/etc/eden/gpu/eden_kernel_64.bin \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/gnss/ca.pem:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/ca.pem \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/gnss/gps.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.cfg \
