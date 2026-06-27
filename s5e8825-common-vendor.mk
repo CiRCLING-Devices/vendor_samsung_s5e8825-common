@@ -76,6 +76,7 @@ PRODUCT_PACKAGES += \
     libcrane_compiler \
     libcrypto-tm \
     libdove_compiler \
+    libdpuhdr10p_8825 \
     libeden_model \
     libeden_nn \
     libeden_osal \
@@ -104,6 +105,8 @@ PRODUCT_PACKAGES += \
     libgraphgen_intermediate_process \
     libgraphgen_misc \
     libgraphgen_network \
+    libhdr10p_meta_plugin_default \
+    libhdr_plugin_exynos8825 \
     libhwjsqz \
     libir \
     libnpu_compiler \
