@@ -6,7 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/s5e8825-common
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/s5e8825-common/proprietary/vendor/etc/audio_board_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_board_info.xml \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/SoundBoosterParam.txt:$(TARGET_COPY_OUT_VENDOR)/etc/SoundBoosterParam.txt \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/dqe/DQE_coef_data.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/DQE_coef_data.xml \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/dqe/calib_data_atc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/calib_data_atc.xml \
@@ -38,6 +38,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/plmn_delta_chn.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_chn.bin \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/plmn_delta_hktw.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_hktw.bin \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/plmn_se13_prebuilt.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_se13_prebuilt.bin \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/sec_audio_volume_curve.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sec_audio_volume_curve.xml \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/samsung/s5e8825-common/proprietary/vendor/firmware/APSV_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APSV_AUDIO_SLSI.bin \
     vendor/samsung/s5e8825-common/proprietary/vendor/firmware/OD_V2.1.6_01_26_QVGA.nnc:$(TARGET_COPY_OUT_VENDOR)/firmware/OD_V2.1.6_01_26_QVGA.nnc \
@@ -57,6 +58,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libGLES_mali \
     android.hardware.gnss@2.1-impl \
+    audio.primary.s5e8825 \
+    audio.sec_primary.default \
     gatekeeper.s5e8825 \
     vendor.samsung.hardware.gnss@2.1-impl \
     vulkan.mali \
@@ -65,12 +68,17 @@ PRODUCT_PACKAGES += \
     libVendorSemDataProps \
     libVendorSemTelephonyProps \
     lib_SamsungRec_07010 \
-    lib_SoundAlive_3DPosition_ver202 \
-    lib_SoundAlive_AlbumArt_ver105 \
     lib_SoundAlive_SRC384_ver320 \
     lib_soundaliveresampler \
+    libaboxpcmdump \
+    libalsautils_sec \
+    libaudio-ril \
+    libaudioparamupdate \
+    libaudioproxy2 \
+    libaudioroute.s5e8825 \
     libc++_shared \
     libcrypto-tm \
+    libdatamod \
     libdpuhdr10p_8825 \
     libegis_fp_normal_sensor_test \
     libengmode_client \
@@ -81,6 +89,7 @@ PRODUCT_PACKAGES += \
     libhdr10p_meta_plugin_default \
     libhdr_plugin_exynos8825 \
     libhwjsqz \
+    liblastaboxmsg \
     liboemcrypto \
     libprofileparamstorage \
     libqfp_sensortest \
@@ -89,16 +98,20 @@ PRODUCT_PACKAGES += \
     libsec-ril \
     libsecaudiocoreutils \
     libsecaudioinfo \
+    libsecaudiolevel \
     libsecnativefeature \
     libsecril-client \
+    libsehbluetooth_audio_session_aidl \
     libsemnativecarrierfeature \
     libsensorlistener \
     libskeymint10device \
     libskeymint_cli \
     libspatializerparamstorage \
+    libspeakercalibration \
     libswcnr \
     libsynaFpSensorTestNwd \
     libteecl \
+    libtinyalsa.s5e8825 \
     libuniapi \
     libuniplugin \
     libuuid_vendor \
@@ -108,9 +121,9 @@ PRODUCT_PACKAGES += \
     sensors.grip \
     sensors.inputvirtual \
     sensors.sensorhub \
-    libaudioeffectoffload \
-    libmyspace \
     libswdap \
+    vendor.samsung.hardware.audio-V1-ndk \
+    vendor.samsung.hardware.bluetooth.audio-V1-ndk \
     vendor.samsung.hardware.gnss@2.0 \
     vendor.samsung.hardware.gnss@2.1 \
     vendor.samsung.hardware.keymint-V1-ndk_platform \
