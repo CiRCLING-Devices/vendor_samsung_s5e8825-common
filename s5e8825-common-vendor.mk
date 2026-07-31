@@ -7,6 +7,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/SoundBoosterParam.txt:$(TARGET_COPY_OUT_VENDOR)/etc/SoundBoosterParam.txt \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/audio_board_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_board_info.xml \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/dqe/DQE_coef_data.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/DQE_coef_data.xml \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/dqe/calib_data_atc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/calib_data_atc.xml \
@@ -68,6 +69,8 @@ PRODUCT_PACKAGES += \
     libVendorSemDataProps \
     libVendorSemTelephonyProps \
     lib_SamsungRec_07010 \
+    lib_SoundAlive_3DPosition_ver202 \
+    lib_SoundAlive_AlbumArt_ver105 \
     lib_SoundAlive_SRC384_ver320 \
     lib_soundaliveresampler \
     libaboxpcmdump \
@@ -121,6 +124,8 @@ PRODUCT_PACKAGES += \
     sensors.grip \
     sensors.inputvirtual \
     sensors.sensorhub \
+    libaudioeffectoffload \
+    libmyspace \
     libswdap \
     vendor.samsung.hardware.audio-V1-ndk \
     vendor.samsung.hardware.bluetooth.audio-V1-ndk \
